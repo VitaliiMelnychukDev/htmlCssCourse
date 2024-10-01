@@ -1,0 +1,69 @@
+.trainingPseudoElements, .trainingChildElements,.sizesTrainning {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid green;
+    width: 500px;
+}
+
+p {
+    font-size: 20px;
+    padding: 5px;
+    margin: 0px;
+}
+
+.trainingPseudoElements p:hover {
+    font-size: 50px;
+}
+
+.trainingPseudoElements::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 20px;
+    background-color: red;
+}
+
+.trainingPseudoElements::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 20px;
+    background-color: darkblue;
+}
+
+.trainingChildElements p {
+    text-decoration: none;
+}
+
+.trainingChildElements p:first-child {
+    text-decoration: underline;
+}
+
+.trainingChildElements p:nth-of-type(2) {
+    text-decoration: line-through;
+}
+
+.trainingChildElements p:last-child {
+    text-decoration: overline;
+}
+
+.sizesTrainning {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sizesTrainning p {
+    font-size: 30px;
+}
+
+.html {
+    font-weight: bold;
+}
+
+.css {
+    background-color: red;
+    color: yellow;
+}
