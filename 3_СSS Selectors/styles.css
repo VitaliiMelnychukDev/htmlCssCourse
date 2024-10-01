@@ -1,0 +1,24 @@
+* {
+    font-size: 14px;
+}
+
+#idElement {
+    font-size: 20px;
+}
+
+.classElement {
+    font-size: 18px;
+}
+
+#idElement, .classElement {
+    margin: 5px;
+    padding: 20px;
+    border: 1px solid green;
+}
+.classElement p {
+    color: gray;
+}
+
+p {
+    color: red;
+}
