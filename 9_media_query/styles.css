@@ -1,0 +1,38 @@
+
+
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: 2px solid black;
+    height: 100%;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flexElement {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    border: 2px solid red;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .flexElement {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        align-items: center;
+    }
+
+    .flexElement {
+        width: 100%;
+    }
+}
