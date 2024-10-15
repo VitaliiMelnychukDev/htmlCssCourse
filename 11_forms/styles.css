@@ -83,10 +83,15 @@
     margin-right: 10px;
 }
 
-.squareCheckbox:checked + .checkboxLabel:before {
+.squareCheckbox:checked + .checkboxLabel::before {
     background-color: black;
 }
 
 input[type="radio"] {
     margin-right: 10px;
+}
+
+.formResultField {
+    margin: 5px 0;
+    font-size: 20px;
 }
