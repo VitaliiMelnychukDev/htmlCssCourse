@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.pageContainer {
+    display: block;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    padding: 30px 0;
+    background-color: burlywood;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: center;
+    background-color: dimgray;
+    position: sticky;
+    top: 0;
+}
+
+.menuItem {
+    width: 150px;
+    padding: 10px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.menuItem:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+.menuItem:hover {
+    background-color: gray;
+}
+
+.title {
+    font-size: 20px;
+    padding: 0 10px;
+    color: antiquewhite;
+}
+
+.subMenu {
+    display: none;
+    position: absolute;
+    top: 43px;
+    width: 100%;
+}
+
+.subMenuItem {
+    width: 100%;
+    background-color: dimgray;
+    font-size: 16px;
+    padding: 5px 10px;
+    color: antiquewhite;
+}
+
+.subMenuItem:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.menuItem:hover > .subMenu {
+    display: block;
+}
+
+.subMenuItem:hover {
+    background-color: gray;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+}
+
+.section {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionContent {
+    font-size: 60px;
+    text-align: center;
+}
+
+.homeSection, .feedbackSection {
+    background-color: brown;
+    color: white;
+}
+
+.productsSection, .contactsSection {
+    background-color: linen;
+}
+
+.clickMe {
+    position: fixed;
+    right: -38px;
+    top: 50%;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 7px 7px 0 0;
+    text-align: center;
+    padding: 3px 20px;
+    transform: rotate(270deg);
+    cursor: pointer;
+}
