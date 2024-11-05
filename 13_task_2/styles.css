@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.pageContainer {
+    display: block;
+    justify-content: center;
+    margin: 50px auto;
+    width: 100%;
+
+}
+
+.tableContainer, .listsContainer {
+    margin: 0 100px;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,th {
+    border:1px solid black;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.centerAlignment {
+    text-align: center;
+}
+
+.idColumn {
+    width: 20px;
+}
+
+
+.totalValue {
+    text-align: right;
+}
+
+.subSectionTitle {
+    text-align: left;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 10px 20px;
+}
+
+ul, ol {
+    margin-left: 80px;
+}
+
+li {
+    font-size: 18px;
+}
+
+.departmentColumn {
+    text-align: center;
+}
+
+.salaryColumn {
+    text-align: right;
+    font-weight: bold;
+}
+
+tr th, tr:nth-child(3), tr:nth-child(4), tr:nth-child(5), tr:nth-child(8), tr:nth-child(9), td:nth-child(7) {
+    background-color: #D6EEEE;
+}
