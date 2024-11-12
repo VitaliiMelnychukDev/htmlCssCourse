@@ -16,9 +16,9 @@
 }
 
 :root {
-  --blue-color-dg: #1e90ff;
+  --blue-color-bg: #1e90ff;
   --white-color: white;
-  --block-margin-top: 20px
+  --block-margin-top: 50px
 }
 
 .whiteText {
@@ -28,19 +28,20 @@
 
 .infoContainer {
   margin-top: var(--block-margin-top);
-  background-color: var(--blue-color-dg);
+  background-color: var(--blue-color-bg);
   height: calc(200px - 50px);
 }
 
 .shadowContainer {
+  width: 100%;
   margin-top : var(--block-margin-top);
-  background-color: var(--blue-color-dg);
+  background-color: var(--blue-color-bg);
   height: 200px;
   box-shadow: 2px 5px 5px lightskyblue;
 }
 
 .gradientContainer {
-  margin-top : var(--block-margin-top);
+  margin-top: var(--block-margin-top);
   height: 200px;
   background-image: linear-gradient(to bottom right, yellow, green);
 }
