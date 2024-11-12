@@ -1,0 +1,53 @@
+.cssBackgroundImage {
+  background-image: url("./pngtree-abstract-green-nature-bokeh-background-soft-background-blur-of-natural-foliage-image_15646813.jpg");
+  height: 300px;
+  background-size: cover;
+}
+
+.alignCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cssBackgroundImageContent {
+  font-size: 100px;
+  color: red;
+}
+
+:root {
+  --blue-color-dg: #1e90ff;
+  --white-color: white;
+  --block-margin-top: 20px
+}
+
+.whiteText {
+  color: var(--white-color);
+  font-size: 70px;
+}
+
+.infoContainer {
+  margin-top: var(--block-margin-top);
+  background-color: var(--blue-color-dg);
+  height: calc(200px - 50px);
+}
+
+.shadowContainer {
+  margin-top : var(--block-margin-top);
+  background-color: var(--blue-color-dg);
+  height: 200px;
+  box-shadow: 2px 5px 5px lightskyblue;
+}
+
+.gradientContainer {
+  margin-top : var(--block-margin-top);
+  height: 200px;
+  background-image: linear-gradient(to bottom right, yellow, green);
+}
+
+.imageContainer {
+  margin-top : var(--block-margin-top);
+  height: 500px;
+  width: 100vw;
+  object-fit: contain;
+}
