@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.animationContainer {
+  width: 100%;
+  height: 600px;
+  background-color: saddlebrown;
+  position: relative;
+  display: flex;
+  padding: 50px;
+}
+
+.callToActionContainer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+@keyframes mainTextAnimation {
+  0% {
+    transform: translateX(-500px);
+  }
+
+  50% {
+    transform: translateX(-500px);
+  }
+
+  80% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.mainText {
+  font-size: 50px;
+  animation: mainTextAnimation;
+  animation-duration: 3.5s;
+}
+
+@keyframes subTextAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.subText {
+  font-size: 40px;
+  padding-top: 10px;
+  animation: subTextAnimation;
+  animation-duration: 4.5s;
+}
+
+@keyframes buyCoffeeAnimation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  79% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateY(100px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.buyCoffee {
+  margin-top: 30px;
+  font-size: 30px;
+  width: fit-content;
+  background-color: cadetblue;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 8px 15px;
+  margin-left: 20%;
+  animation: buyCoffeeAnimation;
+  animation-duration: 5.5s;
+}
+
+.posterContainer {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes coffeePosterAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.coffeePoster {
+  object-fit: contain;
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  animation-name: coffeePosterAnimation;
+  animation-duration: 2s;
+}
+
