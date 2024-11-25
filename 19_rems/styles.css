@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+header {
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #45a049;
+  position: sticky;
+  top: 0;
+}
+
+.mainContainer {
+  background-color: cornflowerblue;
+  min-height: 100vh;
+}
+
+.laptopsContainer {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.laptopContainer {
+  width: 30%;
+}
+
+.laptop {
+  border: 0.1rem solid black;
+  margin: 1rem 1rem;
+  min-height: 7rem;
+}
+
+.section {
+  padding: 0.25rem 1rem;
+  display: flex;
+}
+
+.sectionName {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.sectionValue {
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #45a049;
+}
+
+@media only screen and (min-width: 3000px) {
+  html {
+    font-size: 40px;
+  }
+
+  .laptopsContainer {
+    padding: 2rem 10rem;
+  }
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
+  html {
+    font-size: 30px;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .laptopContainer {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .laptopContainer {
+    width: 100%;
+  }
+
+  html {
+    font-size: 25px;
+  }
+}
